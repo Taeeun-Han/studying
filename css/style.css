@@ -1,0 +1,384 @@
+/* common */
+body {
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.bar {
+  width: 100%;
+  height: 2px;
+  background-color: #ddd;
+}
+
+/* header */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #f6f5f0;
+  border-bottom: 1px solid #c8c8c8;
+  z-index: 9;
+}
+header .inner {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .inner .logo img {
+  width: 150px;
+}
+header .inner .sub-menu {
+  position: absolute;
+  top: 0px;
+  right: 0;
+}
+header .inner .sub-menu .menu {
+  font-family: Arial, sans-serif;
+}
+header .inner .sub-menu .menu li {
+  position: relative;
+}
+header .inner .sub-menu .menu li::before {
+  content: "";
+  width: 1px;
+  height: 12px;
+  background-color: #e5e5e5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+header .inner .sub-menu .menu li:first-child::before {
+  display: none;
+}
+header .inner .sub-menu .menu li a {
+  font-size: 12px;
+  color: #656565;
+  padding: 10px 20px;
+  display: block;
+}
+header .inner .sub-menu .menu li a:hover {
+  color: #000;
+}
+
+/* VISUAL */
+.visual {
+  width: 100%;
+  margin-top: 70px;
+  background-color: #002333;
+}
+.visual .inner .visual__img img {
+  height: 500px;
+  width: 100%;
+}
+
+.intro {
+  width: 100%;
+}
+.intro .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.intro .inner .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+.intro .inner .left .intro01 {
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+  font: normal 18px/1.7 "Nanum Gothic";
+}
+.intro .inner .left .intro02 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 100px;
+  font: normal 18px/1.7 "Nanum Gothic";
+  border: 2px solid #ddd;
+  border-radius: 20px;
+}
+.intro .inner .left .intro02 ul li .material-icons {
+  color: #ffcd70;
+}
+.intro .inner .left .intro03 {
+  padding: 30px;
+  text-align: center;
+  font: normal 18px/1.7 "Nanum Gothic";
+  background-color: #333;
+  color: #fff;
+  padding: 10px 190px;
+  margin-top: 50px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+.intro .inner .left .intro04 {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.intro .inner .left .intro04 p {
+  font: normal 15px/1.7 "Nanum Gothic";
+  margin-bottom: 40px;
+  text-align: left;
+}
+.intro .inner .left .intro04 .image {
+  margin-bottom: 20px;
+}
+.intro .inner .left .intro04 .image img {
+  width: 100%;
+}
+.intro .inner .left .intro04 .intro04__01 {
+  font: bold 18px/1.7 "Nanum Gothic";
+}
+.intro .inner .left .intro04 .intro04__03 {
+  margin-bottom: 0px;
+  font: bold 18px/1.7 "Nanum Gothic";
+}
+.intro .inner .left .intro04 .intro04__04 {
+  font: normal 15px/1.7 "Nanum Gothic";
+}
+.intro .inner .left .intro05 {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.intro .inner .left .intro05 p {
+  font: normal 15px/1.7 "Nanum Gothic";
+  margin-bottom: 40px;
+  text-align: left;
+}
+.intro .inner .left .intro05 .image {
+  margin-bottom: 20px;
+}
+.intro .inner .left .intro05 .image img {
+  width: 100%;
+}
+.intro .inner .left .intro05 .intro05__01 {
+  font: bold 18px/1.7 "Nanum Gothic";
+  margin-bottom: 20px;
+}
+.intro .inner .left .intro05 .intro05__02 {
+  margin-bottom: 20px;
+}
+.intro .inner .left .intro05 .intro05__04 {
+  font: bold 18px/1.7 "Nanum Gothic";
+  margin-bottom: 20px;
+}
+.intro .inner .left .intro05 .image img {
+  width: 80%;
+}
+.intro .inner .left .intro05 .intro05__boxs {
+  margin-top: -10px;
+}
+.intro .inner .left .intro05 .intro05__boxs .box {
+  width: 350px;
+  height: 250px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  float: left;
+  padding: 0px 30px 0px 30px;
+}
+.intro .inner .left .intro05 .intro05__boxs .box p {
+  font: bold 18px/1.5 "Nanum Gothic";
+}
+.intro .inner .left .intro05 .intro05__boxs .box p:first-child {
+  color: #ffcd70;
+  font-size: 30px;
+}
+.intro .inner .left .intro05 .intro05__boxs .box p:nth-child(2) {
+  font: bold 16px/1.5 "Nanum Gothic";
+  margin-top: -20px;
+}
+.intro .inner .left .intro05 .intro05__boxs .box p:nth-child(3) {
+  font: normal 15px/1.5 "Nanum Gothic";
+  margin-top: -20px;
+}
+.intro .inner .left .intro05 .intro05__boxs .box:nth-child(6) > p:first-child {
+  font: bold 18px/1.5 "Nanum Gothic";
+  margin-top: 30px;
+}
+.intro .inner .left .intro05 .intro05__boxs .box:nth-child(6) > p:nth-child(2) {
+  font: bold 16px/1.5 "Nanum Gothic";
+  margin-top: -20px;
+}
+.intro .inner .left .intro05 .intro05__boxs .box:nth-child(6) > p:nth-child(3) {
+  font: normal 15px/1.5 "Nanum Gothic";
+  margin-top: -20px;
+}
+.intro .inner .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  width: 30%;
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
+.intro .inner .right .intro01,
+.intro .inner .right .intro02,
+.intro .inner .right .intro03,
+.intro .inner .right .intro04 {
+  width: 100%;
+  text-align: center;
+}
+.intro .inner .right .intro01 {
+  background-color: salmon;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.intro .inner .right .intro01 p {
+  font: bold 16px/1 "Nanum Gothic";
+  color: #fff;
+}
+.intro .inner .right .intro02 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0px 25px;
+}
+.intro .inner .right .intro02 .price__01 {
+  font: bold 14px/1 "Nanum Gothic";
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  margin-top: 20px;
+}
+.intro .inner .right .intro02 .price__01 .red {
+  color: red;
+}
+.intro .inner .right .intro02 .price__01 .grey {
+  color: #bbb;
+  font: normal 12px/1 "Nanum Gothic";
+  text-decoration: line-through;
+}
+.intro .inner .right .intro02 .price__02 {
+  font: bold 20px/1 "Nanum Gothic";
+  margin-top: 0px;
+}
+.intro .inner .right .intro02 .price__03 {
+  font: normal 14px/1 "Nanum Gothic";
+  margin-top: -10px;
+}
+.intro .inner .right .intro02 .button {
+  margin-top: 10px;
+}
+.intro .inner .right .intro02 .button .button01 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+.intro .inner .right .intro02 .button .button01 button {
+  padding: 10px 15px;
+  background-color: #ffcd70;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  font: bold 13px/1 "Nanum Gothic";
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.intro .inner .right .intro02 .button .button01 button:hover {
+  color: #fff;
+}
+.intro .inner .right .intro02 .button .button02 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font: bold 13px/1 "Nanum Gothic";
+}
+.intro .inner .right .intro02 .button .button02 .favorite,
+.intro .inner .right .intro02 .button .button02 .share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.intro .inner .right .intro02 .button .button02 .favorite:hover {
+  color: red;
+}
+.intro .inner .right .intro02 .button .button02 .share:hover {
+  color: #bbb;
+}
+.intro .inner .right .intro03 {
+  font: 14px/1.7 "Nanum Gothic";
+  text-align: left;
+  background-color: #eee;
+  padding: 10px 0px;
+}
+.intro .inner .right .intro03 ul {
+  margin-left: 0px;
+}
+.intro .inner .right .intro04 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro .inner .right .intro04 .help,
+.intro .inner .right .intro04 .question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: bold 13px/1.7 "Nanum Gothic";
+}
+.intro .inner .right .intro04 .help {
+  gap: 5px;
+  margin-right: 30px;
+}
+.intro .inner .right .intro04 .question {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.intro .inner .right .intro04 .question:hover {
+  color: #bbb;
+}
+
+/*# sourceMappingURL=style.css.map */
